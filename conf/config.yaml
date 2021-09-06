@@ -1,0 +1,15 @@
+api:
+  endpoint: :8001
+  run_mode: debug
+  env: prd
+
+redis:
+  addr: 127.0.0.1:6379
+  password:
+  pool_size: 5000
+  min_idle_conns: 5
+  idle_timeout: 60
+  db: 0
+
+everdale:
+  path: /data/everdale-assets
