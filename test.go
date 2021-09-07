@@ -1,1 +1,5 @@
-package everdale_wiki
+package main
+
+func main() {
+
+}
