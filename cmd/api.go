@@ -4,6 +4,7 @@ import (
 	"everdale-wiki/pkg/buildings"
 	"everdale-wiki/pkg/config"
 	"everdale-wiki/pkg/logger"
+	"everdale-wiki/pkg/page"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -17,6 +18,12 @@ func main() {
 	router.HEAD("/ping", func(ctx *gin.Context) {
 		ctx.String(http.StatusOK, "")
 	})
+
+	router.Static("static", "static")
+	router.StaticFile("/favicon.ico", "static/100.ico")
+
+	router.GET("/", page.Page)
+	router.GET("/buildings", page.Page)
 
 	apiGroup := router.Group("/api")
 	{
