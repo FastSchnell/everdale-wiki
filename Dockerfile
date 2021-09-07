@@ -6,7 +6,7 @@ WORKDIR /go/release
 
 ADD . .
 
-RUN GOOS=linux CGO_ENABLED=0 GOARCH=amd64 go build -ldflags="-s -w" -installsuffix cgo -o nt cmd/api.go
+RUN GOOS=linux CGO_ENABLED=0 GOARCH=amd64 go build -ldflags="-s -w" -installsuffix cgo -o ew cmd/api.go
 
 FROM scratch as prod
 
