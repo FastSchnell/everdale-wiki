@@ -24,7 +24,7 @@ Everdale Wiki - Nation Buildings | Postbook
 %s
 
 <div class="form-group" align="center">
-      <label for="Building Name" class="form-label mt-4">Building Name</label>
+      <label for="Building Name" class="form-label mt-4">Nation Building Name</label>
       <select class="form-select" id="BuildingName">
 
         <option>Castle</option>
@@ -53,7 +53,7 @@ Everdale Wiki - Nation Buildings | Postbook
     </div>
 
 <div class="form-group" align="center">
-      <label for="Building Level" class="form-label mt-4">Building Level</label>
+      <label for="Building Level" class="form-label mt-4">Nation Building Level</label>
       <select class="form-select" id="BuildingLevel">
         <option>ALL</option>
         <option>1</option>

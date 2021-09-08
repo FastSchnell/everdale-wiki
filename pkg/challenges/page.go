@@ -23,7 +23,7 @@ Everdale Wiki - Challenges | Postbook
 %s
 
 <div class="form-group" align="center">
-      <label for="Building Name" class="form-label mt-4">Building Name</label>
+      <label for="Building Name" class="form-label mt-4">Challenges Name</label>
       <select class="form-select" id="BuildingName">
   <option>ALL</option>
         <option>ValleyFeast</option>
