@@ -1,7 +1,9 @@
-package page
+package specialties
+
 
 import (
 	"everdale-wiki/pkg/logger"
+	"everdale-wiki/pkg/page"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
@@ -13,44 +15,28 @@ var (
 <html>
 <head>
 <title>
-Everdale Wiki - Buildings | Postbook
+Everdale Wiki - specialties | Postbook
 </title>
     <link rel="stylesheet" href="/static/bootstrap.css" media="screen">
 
 </head>
 
 <body>
-
 %s
 
 <div class="form-group" align="center">
       <label for="Building Name" class="form-label mt-4">Building Name</label>
       <select class="form-select" id="BuildingName">
 
-        <option value="Town Hall">Town Hall</option>
-        <option value="WoodStorage">WoodStorage</option>
-        <option value="House">House</option>
-        <option value="PumpkinField">PumpkinField</option>
-        <option value="StoneStorage">StoneStorage</option>
-<option value="Library">Library</option>
-<option value="Sawmill">Sawmill</option>
-<option value="StoneMine">StoneMine</option>
-<option value="ChickenCoop">ChickenCoop</option>
-<option value="BrickYard">BrickYard</option>
-<option value="ClayPit">ClayPit</option>
-<option value="ClayStorage">ClayStorage</option>
-<option value="Warehouse">Warehouse</option>
-<option value="Treasury">Treasury</option>
-<option value="Fountain">Fountain</option>
-<option value="VillageTrader">VillageTrader</option>
-<option value="FigurineWorkshop">FigurineWorkshop</option>
-<option value="PotteryWorkshop">PotteryWorkshop</option>
-<option value="StatueWorkshop">StatueWorkshop</option>
-<option value="JuicePress">JuicePress</option>
-<option value="Windmill">Windmill</option>
-<option value="Beehive">Beehive</option>
-<option value="AppleTreeGrove">AppleTreeGrove</option>
-<option value="VillageTraderCart">VillageTraderCart</option>
+        <option>Lumberjacking</option>
+        <option>Farming</option>
+        <option>Stonemasonry</option>
+        <option>Researching</option>
+        <option>Sawing</option>
+        <option>Construction</option>
+        <option>Claydigging</option>
+
+
 
 
       </select>
@@ -70,12 +56,6 @@ Everdale Wiki - Buildings | Postbook
         <option>8</option>
         <option>9</option>
         <option>10</option>
-        <option>11</option>
-        <option>12</option>
-        <option>13</option>
-        <option>14</option>
-        <option>15</option>
-        <option>16</option>
       </select>
     </div>
 
@@ -91,11 +71,10 @@ Everdale Wiki - Buildings | Postbook
     <tr>
       <th scope="col">Name</th>
       <th scope="col">Level</th>
-      <th scope="col">Coins</th>
-      <th scope="col">Wood</th>
-      <th scope="col">Clay</th>
-      <th scope="col">Stone</th>
-      <th scope="col">Plank</th>
+      <th scope="col">BoostIncrease</th>
+      <th scope="col">StudySeconds</th>
+      <th scope="col">GoldCost</th>
+      <th scope="col">XPNeededMinutes</th>
 
     </tr>
   </thead>
@@ -148,7 +127,7 @@ function gotoBuildings() {
   var levelS = document.getElementById("BuildingLevel");
   var levelIdx = levelS.selectedIndex;
   var level = levelS.value;
-  window.location.href="/buildings?name=" + name + "&level=" + level + "&name_idx=" + nameIdx + "&level_idx=" + levelIdx ;
+  window.location.href="/specialties?name=" + name + "&level=" + level + "&name_idx=" + nameIdx + "&level_idx=" + levelIdx ;
 }
 
 function getQueryVariable(variable)
@@ -176,12 +155,12 @@ function getQueryVariable(variable)
 `
 )
 
-func Page(ctx *gin.Context) {
+func SpecialtiesPage(ctx *gin.Context) {
 	name, _ := ctx.GetQuery("name")
 	level, _ := ctx.GetQuery("level")
 
 	if name == "" {
-		name = "Town Hall"
+		name = "Lumberjacking"
 		level = "0"
 	}
 
@@ -199,5 +178,5 @@ func Page(ctx *gin.Context) {
 	}
 
 
-	ctx.Data(http.StatusOK, "text/html", []byte(fmt.Sprintf(HtmlStr, NavStr, tableStr)))
+	ctx.Data(http.StatusOK, "text/html", []byte(fmt.Sprintf(HtmlStr, page.NavStr, tableStr)))
 }

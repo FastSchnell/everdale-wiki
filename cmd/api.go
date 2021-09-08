@@ -2,9 +2,12 @@ package main
 
 import (
 	"everdale-wiki/pkg/buildings"
+	"everdale-wiki/pkg/challenges"
 	"everdale-wiki/pkg/config"
 	"everdale-wiki/pkg/logger"
+	"everdale-wiki/pkg/nation_buildings"
 	"everdale-wiki/pkg/page"
+	"everdale-wiki/pkg/specialties"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -24,6 +27,9 @@ func main() {
 
 	router.GET("/", page.Page)
 	router.GET("/buildings", page.Page)
+	router.GET("/nation_buildings", nation_buildings.NationBuildingsPage)
+	router.GET("/specialties", specialties.SpecialtiesPage)
+	router.GET("/challenges", challenges.ChallengesPage)
 
 	apiGroup := router.Group("/api")
 	{
