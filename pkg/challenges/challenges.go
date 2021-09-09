@@ -50,6 +50,7 @@ func GetDetail(name string) ([]*ChallengesDetail, error) {
 			sd.Name = strings.Split(cName, "_")[1]
 	        sd.Npc = row[2]
 	        sd.MinNationLevel = row[11]
+	        sd.BuildingNeeded = row[13]
 	        sd.BuildingLevelNeeded = row[14]
 	        sd.OtherChallengeNeeded = ocn
 	        sd.RewardPerk = row[62]

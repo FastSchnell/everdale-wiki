@@ -1,4 +1,5 @@
-package nation_buildings
+package tools
+
 
 import (
 	"everdale-wiki/pkg/logger"
@@ -14,7 +15,7 @@ var (
 <html>
 <head>
 <title>
-Everdale Wiki - Nation Buildings | Postbook
+Everdale Wiki - Tools | Postbook
 </title>
     <link rel="stylesheet" href="/static/bootstrap.css" media="screen">
 
@@ -24,48 +25,32 @@ Everdale Wiki - Nation Buildings | Postbook
 %s
 
 <div class="form-group" align="center">
-      <label for="Building Name" class="form-label mt-4">Nation Building Name</label>
+      <label for="Building Name" class="form-label mt-4">Specialties Name</label>
       <select class="form-select" id="BuildingName">
 
-        <option>Castle</option>
-        <option>ResearchAcademy</option>
-        <option>ConstructionAcademy</option>
-        <option>LumberjackAcademy</option>
-        <option>WheatField</option>
-        <option>ClaydiggerAcademy</option>
-        <option>StonemasonAcademy</option>
-        <option>FarmerAcademy</option>
-        <option>NationBakery</option>
-        <option>NationTailor</option>
-        <option>NationPotionMaker</option>
-        <option>NationCannery</option>
-        <option>NationDyeShop</option>
-        <option>NationToyWorkshop</option>
-        <option>NationFishingSpot</option>
-        <option>NationCottonField</option>
-        <option>NationIndigoField</option>
-        <option>NationSugarField</option>
-        <option>NationSaltField</option>
-        <option>NationMonument01</option>
+        <option>SpeedLumberjack</option>
+        <option>SpeedFarmer</option>
+        <option>SpeedResearcher</option>
+        <option>SpeedStonemason</option>
+        <option>SpeedSawyer</option>
+        <option>SpeedClaydigger</option>
+        <option>SpeedBrickmaker</option>
+        <option>NoFood</option>
+
+
 
 
       </select>
     </div>
 
 <div class="form-group" align="center">
-      <label for="Building Level" class="form-label mt-4">Nation Building Level</label>
+      <label for="Building Level" class="form-label mt-4">Specialties Level</label>
       <select class="form-select" id="BuildingLevel">
         <option>ALL</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
+
       </select>
     </div>
 
@@ -81,12 +66,13 @@ Everdale Wiki - Nation Buildings | Postbook
     <tr>
       <th scope="col">Name</th>
       <th scope="col">Level</th>
-      <th scope="col">Coins</th>
-      <th scope="col">Wood</th>
-      <th scope="col">Clay</th>
-      <th scope="col">Stone</th>
-      <th scope="col">Plank</th>
-            <th scope="col">Brick</th>
+      <th scope="col">BuildingLevel</th>
+      <th scope="col">BoostIncrease</th>
+      <th scope="col">HungerPercentage</th>
+      <th scope="col">SpeedIncrease</th>
+      <th scope="col">DurabilitySec</th>
+      <th scope="col">CreationPhaseSeconds</th>
+
 
     </tr>
   </thead>
@@ -139,7 +125,7 @@ function gotoBuildings() {
   var levelS = document.getElementById("BuildingLevel");
   var levelIdx = levelS.selectedIndex;
   var level = levelS.value;
-  window.location.href="/nation_buildings?name=" + name + "&level=" + level + "&name_idx=" + nameIdx + "&level_idx=" + levelIdx ;
+  window.location.href="/tools?name=" + name + "&level=" + level + "&name_idx=" + nameIdx + "&level_idx=" + levelIdx ;
 }
 
 function getQueryVariable(variable)
@@ -167,12 +153,12 @@ function getQueryVariable(variable)
 `
 )
 
-func NationBuildingsPage(ctx *gin.Context) {
+func ToolsPage(ctx *gin.Context) {
 	name, _ := ctx.GetQuery("name")
 	level, _ := ctx.GetQuery("level")
 
 	if name == "" {
-		name = "Castle"
+		name = "SpeedLumberjack"
 		level = "0"
 	}
 

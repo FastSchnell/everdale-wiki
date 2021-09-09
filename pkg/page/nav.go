@@ -28,12 +28,9 @@ var NavStr = `
           <a class="nav-link" href="/nation_buildings">Nation Buildings</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Resources(Coming Soon)</a>
+          <a class="nav-link" href="/tools">Tools</a>
         </li>
-       
-        <li class="nav-item">
-          <a class="nav-link" href="#">Boat & TradePartners (Coming Soon)</a>
-        </li>
+
 
 
         <li class="nav-item">
