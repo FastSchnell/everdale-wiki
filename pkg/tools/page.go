@@ -25,7 +25,7 @@ Everdale Wiki - Tools | Postbook
 %s
 
 <div class="form-group" align="center">
-      <label for="Building Name" class="form-label mt-4">Specialties Name</label>
+      <label for="Building Name" class="form-label mt-4">Tools Name</label>
       <select class="form-select" id="BuildingName">
 
         <option>SpeedLumberjack</option>
@@ -44,7 +44,7 @@ Everdale Wiki - Tools | Postbook
     </div>
 
 <div class="form-group" align="center">
-      <label for="Building Level" class="form-label mt-4">Specialties Level</label>
+      <label for="Building Level" class="form-label mt-4">Tools Level</label>
       <select class="form-select" id="BuildingLevel">
         <option>ALL</option>
         <option>1</option>
