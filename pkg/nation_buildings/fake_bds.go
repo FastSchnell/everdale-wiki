@@ -25,7 +25,7 @@ func FakeBds(name string, level int) (string, error) {
 
 	bdsStr := ""
 	for _, bd := range bds {
-		bdsStr += fmt.Sprintf(BaseStr, bd.Name, bd.Level, bd.Coins, bd.Wood, bd.Clay, bd.Stone, bd.Plank, bd.Brick)
+		bdsStr += fmt.Sprintf(BaseStr, outPutName(bd.Name), bd.Level, bd.Coins, bd.Wood, bd.Clay, bd.Stone, bd.Plank, bd.Brick)
 	}
 
 	return bdsStr, nil

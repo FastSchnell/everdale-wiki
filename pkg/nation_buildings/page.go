@@ -28,7 +28,7 @@ Everdale Wiki - Nation Buildings | Postbook
       <select class="form-select" id="BuildingName">
 
         <option>Castle</option>
-        <option>ResearchAcademy</option>
+        <option>Research Guild</option>
         <option>ConstructionAcademy</option>
         <option>LumberjackAcademy</option>
         <option>WheatField</option>
@@ -167,9 +167,32 @@ function getQueryVariable(variable)
 `
 )
 
+
+func fakeName(name string) string {
+	switch name {
+	case "Research Guild":
+		name = "ResearchAcademy"
+
+	}
+	return name
+}
+
+func outPutName(name string) string {
+	switch name {
+	case "ResearchAcademy":
+		name = "Research Guild"
+
+	}
+	return name
+}
+
+
 func NationBuildingsPage(ctx *gin.Context) {
 	name, _ := ctx.GetQuery("name")
+	name = fakeName(name)
 	level, _ := ctx.GetQuery("level")
+
+
 
 	if name == "" {
 		name = "Castle"

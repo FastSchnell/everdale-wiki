@@ -27,12 +27,12 @@ Everdale Wiki - Buildings | Postbook
       <label for="Building Name" class="form-label mt-4">Building Name</label>
       <select class="form-select" id="BuildingName">
 
-        <option value="Town Hall">Town Hall</option>
+        <option value="Village Kitchen">Village Kitchen</option>
         <option value="WoodStorage">WoodStorage</option>
         <option value="House">House</option>
         <option value="PumpkinField">PumpkinField</option>
         <option value="StoneStorage">StoneStorage</option>
-<option value="Library">Library</option>
+<option value="Study">Study</option>
 <option value="Sawmill">Sawmill</option>
 <option value="StoneMine">StoneMine</option>
 <option value="ChickenCoop">ChickenCoop</option>
@@ -176,8 +176,34 @@ function getQueryVariable(variable)
 `
 )
 
+
+func fakeName(name string) string {
+	switch name {
+	case "Village Kitchen":
+		name = "Town Hall"
+	case "Study":
+		name = "Library"
+
+	}
+	return name
+}
+
+func outPutName(name string) string {
+	switch name {
+	case "Town Hall":
+		name = "Village Kitchen"
+	case "Library":
+		name = "Study"
+
+	}
+	return name
+}
+
+
+
 func Page(ctx *gin.Context) {
 	name, _ := ctx.GetQuery("name")
+	name = fakeName(name)
 	level, _ := ctx.GetQuery("level")
 
 	if name == "" {
