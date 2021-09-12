@@ -54,6 +54,7 @@ func GetDetail(name string) ([]*ChallengesDetail, error) {
 	        sd.BuildingLevelNeeded = row[14]
 	        sd.OtherChallengeNeeded = ocn
 	        sd.RewardPerk = row[62]
+	        sd.RewardNationKnowledge = row[64]
 
 			bds = append(bds, sd)
 		}
@@ -73,4 +74,5 @@ type ChallengesDetail struct {
 	BuildingLevelNeeded string
 	OtherChallengeNeeded string
 	RewardPerk string
+	RewardNationKnowledge string
 }

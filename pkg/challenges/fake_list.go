@@ -14,6 +14,7 @@ var BaseStr = `
       <th scope="col">%s</th>
       <th scope="col">%s</th>
       <th scope="col">%s</th>
+<th scope="col">%s</th>
     </tr>
 `
 
@@ -25,7 +26,7 @@ func FakeBds(name string) (string, error) {
 
 	bdsStr := ""
 	for _, bd := range bds {
-		bdsStr += fmt.Sprintf(BaseStr, bd.Name, bd.Npc, bd.MinNationLevel, bd.BuildingNeeded, bd.BuildingLevelNeeded, bd.OtherChallengeNeeded, bd.RewardPerk)
+		bdsStr += fmt.Sprintf(BaseStr, bd.Name, bd.Npc, bd.MinNationLevel, bd.BuildingNeeded, bd.BuildingLevelNeeded, bd.OtherChallengeNeeded, bd.RewardPerk, bd.RewardNationKnowledge)
 	}
 
 	return bdsStr, nil

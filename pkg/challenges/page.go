@@ -77,6 +77,8 @@ Everdale Wiki - Challenges | Postbook
       <th scope="col">BuildingLevelNeeded</th>
       <th scope="col">OtherChallengeNeeded</th>
       <th scope="col">RewardPerk</th>
+<th scope="col">RewardNationKnowledge</th>
+
     </tr>
   </thead>
   <tbody>
