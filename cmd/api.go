@@ -7,6 +7,7 @@ import (
 	"everdale-wiki/pkg/logger"
 	"everdale-wiki/pkg/nation_buildings"
 	"everdale-wiki/pkg/page"
+	"everdale-wiki/pkg/recipes"
 	"everdale-wiki/pkg/specialties"
 	"everdale-wiki/pkg/tools"
 	"github.com/gin-gonic/gin"
@@ -32,6 +33,7 @@ func main() {
 	router.GET("/specialties", specialties.SpecialtiesPage)
 	router.GET("/challenges", challenges.ChallengesPage)
 	router.GET("/tools", tools.ToolsPage)
+	router.GET("/recipes", recipes.RecipesPage)
 
 	apiGroup := router.Group("/api")
 	{

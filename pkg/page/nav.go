@@ -30,7 +30,9 @@ var NavStr = `
         <li class="nav-item">
           <a class="nav-link" href="/tools">Tools</a>
         </li>
-
+        <li class="nav-item">
+          <a class="nav-link" href="/recipes">Recipes</a>
+        </li>
 
 
         <li class="nav-item">
