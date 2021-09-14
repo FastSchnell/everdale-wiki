@@ -38,6 +38,14 @@ var NavStr = `
         <li class="nav-item">
           <a class="nav-link" href="/specialties">Specialties</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://everdale.postbook.xyz/read/0f990668-a37e-4355-8f88-702b4dfe9505" target="_blank">Study Tech</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://everdale.postbook.xyz/read/072d4d47-5f26-4636-b781-f48396fc10ac" target="_blank">Potion Recipes</a>
+        </li>
       </ul>
 
     </div>

@@ -26,6 +26,7 @@ func main() {
 
 	router.Static("static", "static")
 	router.StaticFile("/favicon.ico", "static/100.ico")
+	router.StaticFile("/google561dd461b94fd509.html", "static/google561dd461b94fd509.html")
 
 	router.GET("/", page.Page)
 	router.GET("/buildings", page.Page)
