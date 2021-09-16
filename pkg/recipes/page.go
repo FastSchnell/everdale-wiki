@@ -28,40 +28,39 @@ Everdale Wiki - Recipes | Postbook
       <label for="Building Name" class="form-label mt-4">Recipes Name</label>
       <select class="form-select" id="BuildingName">
   <option>ALL</option>
-        <option>Bread</option>
-        <option>BerryPie</option>
-        <option>BerryCake</option>
-        <option>SugarApple</option>
-        <option>HoneyCookie</option>
-        <option>FishPie</option>
-        <option>ApplePie</option>
-        <option>CakeRoyale</option>
-        <option>SaltedFish</option>
-        <option>SaltPot</option>
-        <option>HoneyPot</option>
         <option>AppleJam</option>
-        <option>SweetHerring</option>
-        <option>DyeRed</option>
-        <option>DyeYellow</option>
+        <option>ApplePie</option>
+        <option>BerryCake</option>
+        <option>BerryPie</option>
+        <option>Bread</option>
+        <option>CakeRoyale</option>
+        <option>Dress</option>
         <option>DyeBlue</option>
         <option>DyeGreen</option>
         <option>DyeOrange</option>
         <option>DyePurple</option>
         <option>DyeRainbow</option>
-        <option>Plushie</option>
-        <option>RuneGame</option>
-        <option>WoodenDuck</option>
-        <option>Marbles</option>
-        <option>WoodenDoll</option>
-        <option>Socks</option>
-        <option>Trousers</option>
+        <option>DyeRed</option>
+        <option>DyeYellow</option>
+        <option>FishPie</option>
         <option>Hat</option>
-        <option>Tunic</option>
-        <option>Shirt</option>
-        <option>Dress</option>
+        <option>HoneyCookie</option>
+        <option>HoneyPot</option>
         <option>Jacket</option>
+        <option>Marbles</option>
+        <option>Plushie</option>
         <option>RainbowSuit</option>
-
+        <option>RuneGame</option>
+        <option>SaltPot</option>
+        <option>SaltedFish</option>
+        <option>Shirt</option>
+        <option>Socks</option>
+        <option>SugarApple</option>
+        <option>SweetHerring</option>
+        <option>Trousers</option>
+        <option>Tunic</option>
+        <option>WoodenDoll</option>
+        <option>WoodenDuck</option>
       </select>
     </div>
 

@@ -26,31 +26,30 @@ Everdale Wiki - Buildings | Postbook
 <div class="form-group" align="center">
       <label for="Building Name" class="form-label mt-4">Building Name</label>
       <select class="form-select" id="BuildingName">
-
-        <option value="Village Kitchen">Village Kitchen</option>
-        <option value="WoodStorage">WoodStorage</option>
-        <option value="House">House</option>
-        <option value="PumpkinField">PumpkinField</option>
-        <option value="StoneStorage">StoneStorage</option>
-<option value="Study">Study</option>
-<option value="Sawmill">Sawmill</option>
-<option value="StoneMine">StoneMine</option>
-<option value="ChickenCoop">ChickenCoop</option>
+<option value="AppleTreeGrove">AppleTreeGrove</option>
+<option value="Beehive">Beehive</option>
 <option value="BrickYard">BrickYard</option>
+<option value="ChickenCoop">ChickenCoop</option>
 <option value="ClayPit">ClayPit</option>
 <option value="ClayStorage">ClayStorage</option>
-<option value="Warehouse">Warehouse</option>
-<option value="Treasury">Treasury</option>
-<option value="Fountain">Fountain</option>
-<option value="VillageTrader">VillageTrader</option>
 <option value="FigurineWorkshop">FigurineWorkshop</option>
-<option value="PotteryWorkshop">PotteryWorkshop</option>
-<option value="StatueWorkshop">StatueWorkshop</option>
+<option value="Fountain">Fountain</option>
+<option value="House">House</option>
 <option value="JuicePress">JuicePress</option>
-<option value="Windmill">Windmill</option>
-<option value="Beehive">Beehive</option>
-<option value="AppleTreeGrove">AppleTreeGrove</option>
+<option value="PotteryWorkshop">PotteryWorkshop</option>
+<option value="PumpkinField">PumpkinField</option>
+<option value="Sawmill">Sawmill</option>
+<option value="StatueWorkshop">StatueWorkshop</option>
+<option value="StoneMine">StoneMine</option>
+<option value="StoneStorage">StoneStorage</option>
+<option value="Study">Study</option>
+<option value="Treasury">Treasury</option>
+<option value="Village Kitchen">Village Kitchen</option>
+<option value="VillageTrader">VillageTrader</option>
 <option value="VillageTraderCart">VillageTraderCart</option>
+<option value="Warehouse">Warehouse</option>
+<option value="Windmill">Windmill</option>
+<option value="WoodStorage">WoodStorage</option>
 
 
       </select>

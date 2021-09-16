@@ -28,25 +28,25 @@ Everdale Wiki - Nation Buildings | Postbook
       <select class="form-select" id="BuildingName">
 
         <option>Castle</option>
-        <option>Research Guild</option>
-        <option>ConstructionAcademy</option>
-        <option>LumberjackAcademy</option>
-        <option>WheatField</option>
         <option>ClaydiggerAcademy</option>
-        <option>StonemasonAcademy</option>
+        <option>ConstructionAcademy</option>
         <option>FarmerAcademy</option>
+        <option>LumberjackAcademy</option>
         <option>NationBakery</option>
-        <option>NationTailor</option>
-        <option>NationPotionMaker</option>
         <option>NationCannery</option>
-        <option>NationDyeShop</option>
-        <option>NationToyWorkshop</option>
-        <option>NationFishingSpot</option>
         <option>NationCottonField</option>
+        <option>NationDyeShop</option>
+        <option>NationFishingSpot</option>
         <option>NationIndigoField</option>
-        <option>NationSugarField</option>
-        <option>NationSaltField</option>
         <option>NationMonument01</option>
+        <option>NationPotionMaker</option>
+        <option>NationSaltField</option>
+        <option>NationSugarField</option>
+        <option>NationTailor</option>
+        <option>NationToyWorkshop</option>
+        <option>Research Guild</option>
+        <option>StonemasonAcademy</option>
+        <option>WheatField</option>
 
 
       </select>

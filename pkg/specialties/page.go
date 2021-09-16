@@ -28,13 +28,13 @@ Everdale Wiki - specialties | Postbook
       <label for="Building Name" class="form-label mt-4">Specialties Name</label>
       <select class="form-select" id="BuildingName">
 
-        <option>Lumberjacking</option>
+        <option>Claydigging</option>
+        <option>Construction</option>
         <option>Farming</option>
-        <option>Stonemasonry</option>
+        <option>Lumberjacking</option>
         <option>Researching</option>
         <option>Sawing</option>
-        <option>Construction</option>
-        <option>Claydigging</option>
+        <option>Stonemasonry</option>
 
 
 

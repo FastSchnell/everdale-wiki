@@ -26,36 +26,36 @@ Everdale Wiki - Challenges | Postbook
       <label for="Building Name" class="form-label mt-4">Challenges Name</label>
       <select class="form-select" id="BuildingName">
   <option>ALL</option>
-        <option>ValleyFeast</option>
-        <option>Shipwreck</option>
-        <option>SheepEscape</option>
-        <option>PlaturtlePancake</option>
-        <option>RoadBuilding</option>
-        <option>BrokenCart</option>
-        <option>Ruins01</option>
-        <option>Ruins02</option>
-        <option>FishingFrenzy</option>
-        <option>MechaScarecrow</option>
-        <option>PlaturtlePants</option>
+<option>BayCleanup</option>
         <option>BiggestCake</option>
-        <option>StuckinJam</option>
-        <option>PsychicOctopus</option>
-        <option>UnityQuilt</option>
-        <option>SlingshotShenanigans</option>
-        <option>IndigoCloudSpirit</option>
+        <option>BreadPupLost</option>
+        <option>BrokenCart</option>
+        <option>CloudFlowerJourney</option>
+        <option>DyeshopExplosion</option>
         <option>ExoticHoney</option>
+        <option>FishingFrenzy</option>
         <option>FoodFight</option>
         <option>HotAirBalloon</option>
-        <option>CloudFlowerJourney</option>
-        <option>BayCleanup</option>
-        <option>SpiritParade</option>
-        <option>BreadPupLost</option>
-        <option>SaltySealife</option>
+        <option>IndigoCloudSpirit</option>
+        <option>MechaScarecrow</option>
         <option>PlaturtleCoaster</option>
-        <option>SweetToothMole</option>
-        <option>SaveEarpuffs</option>
+        <option>PlaturtlePancake</option>
+        <option>PlaturtlePants</option>
+        <option>PsychicOctopus</option>
+        <option>RoadBuilding</option>
+        <option>Ruins01</option>
+        <option>Ruins02</option>
+        <option>SaltySealife</option>
         <option>SandcastleSymposium</option>
-        <option>DyeshopExplosion</option>
+        <option>SaveEarpuffs</option>
+        <option>SheepEscape</option>
+        <option>Shipwreck</option>
+        <option>SlingshotShenanigans</option>
+        <option>SpiritParade</option>
+        <option>StuckinJam</option>
+        <option>SweetToothMole</option>
+        <option>UnityQuilt</option>
+        <option>ValleyFeast</option>
 
       </select>
     </div>
